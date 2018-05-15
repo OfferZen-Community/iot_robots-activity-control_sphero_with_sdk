@@ -7,9 +7,11 @@ console.log('trying to connect to sphero...')
 
 orb.connect(function () {
   console.log('connected to sphero')
-  orb.color("green")
+  orb.color("green").delay(1000).then(() => {
+    return orb.color("red")
+  }).delay(1000).then(() => {
+    return orb.color("blue")
+  })
   //
-  setTimeout(function(){
-    orb.color("red")
-  }, 2000)
+  
 })
