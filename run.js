@@ -14,7 +14,7 @@ orb.connect(function () {
     return orb.color("green")
   })
 
-  orb.roll(1,0).delay(1500).then(() => {
+  orb.roll(100,0).delay(1500).then(() => {
     orb.roll(0,0)
   })
   //
