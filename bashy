@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+while read p; do
+  sudo node run.js $p &
+done <sphero_ids.txt

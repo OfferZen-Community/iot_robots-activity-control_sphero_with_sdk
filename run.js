@@ -6,5 +6,7 @@ console.log('trying to connect to sphero...');
 
 orb.connect(function () {
   console.log('connected to sphero')
+  orb.setMotionTimeout(1000)
   orb.color("green");
+  orb.roll(50,0)
 });
